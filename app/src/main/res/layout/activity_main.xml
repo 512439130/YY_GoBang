@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:padding="3dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/id_bt_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:text="重玩"/>
+        <Button
+            android:id="@+id/id_bt_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悔棋"/>
+
+
+    </LinearLayout>
+
+    <com.yy.wuziqi.GobangPanel
+        android:id="@+id/id_gobang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+</LinearLayout>
